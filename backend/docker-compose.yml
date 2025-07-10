@@ -1,0 +1,21 @@
+services:
+  mynotes-postgres-db:
+    image: postgres:latest
+    container_name: mynotes-postgres-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mynotes_usr
+      POSTGRES_PASSWORD: mynotes_pwd
+      POSTGRES_DB: mynotes_db
+      LC_ALL: C
+      LANG: C
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
+    volumes:
+      - ../mynotes_postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U mynotes_usr -d mynotes_db" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
