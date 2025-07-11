@@ -5,16 +5,16 @@ Une application complète de prise de notes développée avec **Flutter** (front
 ## Démonstration
 
 ### Écran de connexion
-![Login](docs/images/login.png)
+![Login](frontend_mobile/docs/images/login.png)
 
 ### Écran d'inscription
-![Register](docs/images/register.png)
+![Register](frontend_mobile/docs/images/register.png)
 
 ### Écran d'accueil (vide)
-![Home](docs/images/home.png)
+![Home](frontend_mobile/docs/images/home.png)
 
 ### Écran d'accueil avec notes
-![Homewithnotes](docs/images/homewithnotes.png)
+![Homewithnotes](frontend_mobile/docs/images/homewithnotes.png)
 
 
 ## Fonctionnalités
